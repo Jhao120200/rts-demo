@@ -1,0 +1,20 @@
+/* demo-only additions (the look itself comes from style.css) */
+.view{animation:viewin .35s ease-out}
+@keyframes viewin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.view{animation:none}}
+@keyframes newrow{from{background:#f3d98a}to{background:transparent}}
+tr.new-row>td{animation:newrow 3s ease-out}
+.live-dot{display:inline-block;width:.6rem;height:.6rem;border-radius:50%;background:var(--ok);margin-right:.4rem}
+.event-card{background:#fff;border-left:8px solid var(--amber);padding:1rem 1.3rem}
+.event-label{font-size:.8rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b6a55}
+.event-title{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;line-height:1.1;margin-top:.15rem}
+.event-meta{color:#555;margin-top:.2rem}.event-details{margin-top:.4rem}.event-none{color:#6b6a55;margin-top:.15rem}
+.event-next{margin-top:.8rem;padding-top:.7rem;border-top:1px solid var(--khaki)}
+.ini{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--od);color:var(--sand);font-weight:700;flex:none}
+.ini.sm{width:34px;height:34px;font-size:.8rem}.ini.lg{width:120px;height:120px;font-size:2.4rem;border:3px solid var(--od)}.ini.xl{width:180px;height:180px;font-size:3.4rem;border:3px solid var(--od)}
+.cred{background:#fff;border:2px dashed var(--amber);padding:.9rem 1rem}
+.grp td{background:var(--khaki)!important;font-weight:600}
+.modalx{position:fixed;inset:0;background:rgba(12,16,10,.55);display:flex;align-items:center;justify-content:center;padding:1rem;z-index:2000}
+.modalx>div{background:#fff;max-width:760px;width:100%;padding:1.25rem;max-height:90vh;overflow:auto;border-radius:2px}
+textarea.rep{font-family:Consolas,"Courier New",monospace;font-size:.9rem;white-space:pre;width:100%;height:300px}
+.demo-badge{background:var(--amber);color:var(--ink);font-size:.65rem;font-weight:700;padding:.1rem .4rem;border-radius:2px;margin-left:.35rem;vertical-align:middle}
